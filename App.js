@@ -122,7 +122,7 @@ export default function App() {
                 <TouchableOpacity
                     style={[styles.submi, styles.shadow]}
                     onPress={() => {
-                        setbmi("BMI = " + changesMesure(weigh, weightUnit, heigh, heightUnit) + Message(bmi));
+                        setbmi("BMI = " + changesMesure(weigh, weightUnit, heigh, heightUnit) + Message(changesMesure(weigh, weightUnit, heigh, heightUnit)));
                     }}
                     title="Submit"
                 ><Text style={styles.text}>Submit</Text>
